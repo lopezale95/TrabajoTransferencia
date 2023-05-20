@@ -4,6 +4,8 @@ import { Component } from '@angular/core';
   selector: 'app-pelicula',
   templateUrl: './pelicula.component.html',
   styleUrls: ['./pelicula.component.css']
+
+ 
 })
 export class PeliculaComponent {
 

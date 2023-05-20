@@ -7,8 +7,7 @@ import { PeliculaComponent } from './pelicula/pelicula.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    PeliculaComponent
+    AppComponent, PeliculaComponent
   ],
   imports: [
     BrowserModule,
