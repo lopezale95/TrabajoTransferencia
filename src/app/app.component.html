@@ -1,317 +1,307 @@
 
-
-<div>
+  <app-pelicula></app-pelicula>
   <header>
-      <nav class="navbar navbar-expand-lg bg-ligth" >
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"> <div class="imagen"><img src="../assets/Logo.jpg" width="200" height="200" alt=""></div></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Peliculas
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="2022">2022</a></li>
-                    <li><a class="dropdown-item" href="2021">2021</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-              </ul>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
-              </form>
+  <nav class="navbar navbar-expand-lg bg-ligth" >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"> <div class="imagen"><img src="../assets/Logo.jpg" width="200" height="200" alt=""></div></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Peliculas
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="2022">2022</a></li>
+              <li><a class="dropdown-item" href="2021">2021</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav> 
+  <div class="container w-25 p-2"> 
+    <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-inner p-4">
+        <a href="../app/pelicula/pelicula.component.html">
+          <div class="carousel-item active">
+              <div class="text-center"> <img src="../assets/divergente.jpg"  class="img-fluid"   alt="Divergente" title="Divergente"> </div> 
             </div>
-          </div>
-        </nav> 
-        <div class="container w-25 p-2"> 
-          <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
-            <div class="carousel-inner p-4">
-              <a href="../vista/divergente.html">
-                <div class="carousel-item active">
-                    <div class="text-center"> <img src="../assets/divergente.jpg"  class="img-fluid"   alt="Divergente" title="Divergente"> </div> 
-                  </div>
-              </a>
-               <a href="vista/mario.html">
-                <div class="carousel-item">
-                    <div class="text-center"> <img src="../assets/mario.jpg" class="img-fluid"   alt="..." title="mario bros movie"> </div>
-                  </div>
-               </a> 
-               <a href="vista/siete_almas.html">
-                <div class="carousel-item">
-                    <div class="text-center"> <img src="../assets/siete.jpg" class="img-fluid"   alt="..." title="siete almas"> </div>
-                  </div>
-               </a>
-               <a href="vista/walle.html">
-                <div class="carousel-item">
-                    <div class="text-center"> <img src="../assets/walle.jpg" class="img-fluid"  alt="..." title="walle"> </div>
-                  </div>
-               </a>
-               <a href="vista/busca_felicidad.html">
-                <div class="carousel-item">
-                    <div class="text-center"> <img src="../assets/enbusca.jpg" class="img-fluid"  alt="..." title="en busca de la felicidad"> </div>
-                  </div>
-               </a>
-              <div class="carousel-item">
-                <div class="text-center"> <img src="../assets/Interestelar.jpg" class="img-fluid"  alt="..." title="Interestelar"> </div>
-              </div>
-              <div class="carousel-item">
-                <div class="text-center"> <img src="../assets/El expreso polar.jpg" class="img-fluid"  alt="..." title="El expreso polar"> </div>
-              </div>
-              <div class="carousel-item">
-                <div class="text-center"> <img src="../assets/CloudAtlas.jpg" class="img-fluid"  alt="..." title="Cloud Atlas"> </div>
-              </div>
-              <div class="carousel-item">
-                <div class="text-center"> <img src="../assets/El castillo ambulante.jpg" class="img-fluid"  alt="..." title="El castillo ambulante"> </div>
-              </div>
-              <div class="carousel-item">
-                <div class="text-center"> <img src="../assets/El perfume.jpg" class="img-fluid"  alt="..." title="El perfume"> </div>
-              </div>
-              <div class="carousel-item">
-                <div class="text-center"> <img src="../assets/Predestinacion.jpg" class="img-fluid"  alt="..." title="Predestinacion"> </div>
-              </div>
-              <div class="carousel-item">
-                <div class="text-center"> <img src="../assets/El efecto mariposa.jpg" class="img-fluid"  alt="..." title="El efecto mariposa"> </div>
-              </div>
-              <div class="carousel-item">
-                <div class="text-center"> <img src="../assets/Dune.jpg" class="img-fluid"  alt="..." title="Duna"> </div>
-              </div>
-              <div class="carousel-item">
-                <div class="text-center"> <img src="../assets/Halloween_El_final.jpg" class="img-fluid"  alt="..." title="Halloween el final"> </div>
-              </div>
-              <div class="carousel-item">
-                <div class="text-center"> <img src="../assets/Atrapame si puedes.jpg" class="img-fluid"  alt="..." title="Atrápame si puedes"> </div>
-              </div>
-              <div class="carousel-item">
-                <div class="text-center"> <img src="../assets/lamilla.jpg" class="img-fluid"  alt="..." title="la milla verde"> </div>
-              </div>
-              <div class="carousel-item">
-                <div class="text-center"> <img src="../assets/dejame.jpg" class="img-fluid"   alt="..." title="dejame salir"> </div>
-              </div>
-              <div class="carousel-item">
-                <div class="text-center"> <img src="../assets/fragmentado.jpg" class="img-fluid"  alt="..." title="fragmentado"> </div>
-              </div>
-              <div class="carousel-item">
-                <div class="text-center"> <img src="../assets/nores.jpg" class="img-fluid"   alt="..." title="no respires"> </div>
-              </div>
-              <div class="carousel-item">
-                <div class="text-center"> <img src="../assets/Abre.jpg" class="img-fluid"   alt="..." title="abre los ojos"> </div>
-              </div>
+        </a>
+         <a href="vista/mario.html">
+          <div class="carousel-item">
+              <div class="text-center"> <img src="../assets/mario.jpg" class="img-fluid"   alt="..." title="mario bros movie"> </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div> 
+         </a> 
+         <a href="vista/siete_almas.html">
+          <div class="carousel-item">
+              <div class="text-center"> <img src="../assets/siete.jpg" class="img-fluid"   alt="..." title="siete almas"> </div>
+            </div>
+         </a>
+         <a href="vista/walle.html">
+          <div class="carousel-item">
+              <div class="text-center"> <img src="../assets/walle.jpg" class="img-fluid"  alt="..." title="walle"> </div>
+            </div>
+         </a>
+         <a href="vista/busca_felicidad.html">
+          <div class="carousel-item">
+              <div class="text-center"> <img src="../assets/enbusca.jpg" class="img-fluid"  alt="..." title="en busca de la felicidad"> </div>
+            </div>
+         </a>
+        <div class="carousel-item">
+          <div class="text-center"> <img src="../assets/Interestelar.jpg" class="img-fluid"  alt="..." title="Interestelar"> </div>
+        </div>
+        <div class="carousel-item">
+          <div class="text-center"> <img src="../assets/El expreso polar.jpg" class="img-fluid"  alt="..." title="El expreso polar"> </div>
+        </div>
+        <div class="carousel-item">
+          <div class="text-center"> <img src="../assets/CloudAtlas.jpg" class="img-fluid"  alt="..." title="Cloud Atlas"> </div>
+        </div>
+        <div class="carousel-item">
+          <div class="text-center"> <img src="../assets/El castillo ambulante.jpg" class="img-fluid"  alt="..." title="El castillo ambulante"> </div>
+        </div>
+        <div class="carousel-item">
+          <div class="text-center"> <img src="../assets/El perfume.jpg" class="img-fluid"  alt="..." title="El perfume"> </div>
+        </div>
+        <div class="carousel-item">
+          <div class="text-center"> <img src="../assets/Predestinacion.jpg" class="img-fluid"  alt="..." title="Predestinacion"> </div>
+        </div>
+        <div class="carousel-item">
+          <div class="text-center"> <img src="../assets/El efecto mariposa.jpg" class="img-fluid"  alt="..." title="El efecto mariposa"> </div>
+        </div>
+        <div class="carousel-item">
+          <div class="text-center"> <img src="../assets/Dune.jpg" class="img-fluid"  alt="..." title="Duna"> </div>
+        </div>
+        <div class="carousel-item">
+          <div class="text-center"> <img src="../assets/Halloween_El_final.jpg" class="img-fluid"  alt="..." title="Halloween el final"> </div>
+        </div>
+        <div class="carousel-item">
+          <div class="text-center"> <img src="../assets/Atrapame si puedes.jpg" class="img-fluid"  alt="..." title="Atrápame si puedes"> </div>
+        </div>
+        <div class="carousel-item">
+          <div class="text-center"> <img src="../assets/lamilla.jpg" class="img-fluid"  alt="..." title="la milla verde"> </div>
+        </div>
+        <div class="carousel-item">
+          <div class="text-center"> <img src="../assets/dejame.jpg" class="img-fluid"   alt="..." title="dejame salir"> </div>
+        </div>
+        <div class="carousel-item">
+          <div class="text-center"> <img src="../assets/fragmentado.jpg" class="img-fluid"  alt="..." title="fragmentado"> </div>
+        </div>
+        <div class="carousel-item">
+          <div class="text-center"> <img src="../assets/nores.jpg" class="img-fluid"   alt="..." title="no respires"> </div>
+        </div>
+        <div class="carousel-item">
+          <div class="text-center"> <img src="../assets/Abre.jpg" class="img-fluid"   alt="..." title="abre los ojos"> </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div> 
+  </div>
+  
+  <h1  class="p-2" class="text-center">Peliculas Recomendadas</h1>
+  <main>
+    <div class="container-xxl">
+      
+        <div class="d-flex flex-wrap justify-content-md-between justify-content-center" title="Divergente">
+        
+          <div class="imagen-pelicula m-3">
+                <a href="./vista/divergente.html">
+                  <div class="imagen">
+                    <img src="../assets/divergente.jpg" width="200" height="300" alt="divergente">
+                  </div>
+                </a>
+                <h4>Divergente</h4>
+            </div>
+            <div class="imagen-pelicula m-3 ">
+                <a href="vista/mario.html">
+                  <div class="imagen">
+                    <img src="../assets/mario.jpg" width="200" height="300" alt="Mario Bros Movie" title="mario bros movie">
+                  </div>
+                </a>
+                <h4>Mario Bros movie</h4>
+            </div>
+            <div class="imagen-pelicula m-3">
+                <a href="vista/siete_almas.html">
+                  <div class="imagen">
+                    <img src="../assets/siete.jpg" width="200" height="300" alt="siete almas" title="siete almas">
+                  </div>
+                </a>
+                <h4>Siete almas</h4>
+            </div>
+            <div class="imagen-pelicula m-3">
+                <a href="vista/walle.html">
+                  <div class="imagen">
+                    <img src="../assets/walle.jpg" width="200" height="300" alt="walle">
+                  </div> 
+                </a>
+                <h4>Walle</h4>
+            </div>
+            <div class="imagen-pelicula m-3">
+                <a href="vista/busca_felicidad.html">
+                  <div class="imagen"><img src="../assets/enbusca.jpg" width="200" height="300" alt="en busca de la felicidad">
+                  </div>
+                </a>
+                <h4>En busca de la felicidad</h4>
+            </div>
+            <div class="imagen-pelicula m-3">
+              <div class="imagen">
+                <img src="../assets/Interestelar.jpg" width="200" height="300" alt="Interestelar">
+              </div>
+              <h4>Interestelar</h4>
+            </div>
+            <div class="imagen-pelicula m-3">
+              <div class="imagen">
+                <img src="../assets/El expreso polar.jpg" width="200" height="300" alt="El expreso polar">
+              </div>
+              <h4>El expreso polar</h4>
+            </div>
+            <div class="imagen-pelicula m-3">
+              <div class="imagen">
+                <img src="../assets/CloudAtlas.jpg " width="200" height="300" alt="Cloud Atlas">
+              </div>
+              <h4>Cloud Atlas</h4>
+            </div>
+            <div class="imagen-pelicula m-3">
+              <div class="imagen"><img src="../assets/El castillo ambulante.jpg" width="200" height="300" alt="El castillo ambulante">
+              </div>
+              <h4>El castillo ambulante</h4>
+            </div>
+            <div class="imagen-pelicula m-3">
+              <div class="imagen"><img src="../assets/El perfume.jpg" width="200" height="300" alt="El perfume">
+              </div>
+              <h4>El perfume</h4>
+            </div>
+            <div class="imagen-pelicula m-3 ">
+              <div class="imagen">
+                <img src="../assets/lamilla.jpg" width="200" height="300" alt="la milla verde" >
+              </div>
+                <h4>La milla verde</h4>
+            </div>
+            <div class="imagen-pelicula m-3">
+              <div class="imagen">
+                <img src="../assets/dejame.jpg" width="200" height="300" alt="dejame salir">
+              </div>
+                <h4>Dejame salir</h4>
+            </div>
+            <div class="imagen-pelicula m-3">
+              <div class="imagen">
+                <img src="../assets/fragmentado.jpg" width="200" height="300" alt="fragmentado">
+              </div>
+                <h4>Fragmentado</h4>
+            </div>
+            <div class="imagen-pelicula m-3">
+              <div class="imagen">
+                <img src="../assets/nores.jpg" width="200" height="300" alt="no respires">
+              </div>
+                <h4>No respires</h4>
+            </div>
+            <div class="imagen-pelicula m-3">
+              <div class="imagen"><img src="../assets/Abre.jpg" width="200" height="300" alt="abre los ojos">
+              </div>
+              <h4>Abre los ojos</h4>
+           </div>
+            <div class="imagen-pelicula m-3">
+              <div class="imagen">
+                <img src="../assets/Predestinacion.jpg" width="200" height="300" alt="Predestinación">
+              </div>
+              <h4>Predestinación</h4>
+            </div>
+            <div class="imagen-pelicula m-3">
+              <div class="imagen">
+                <img src="../assets/El efecto mariposa.jpg" width="200" height="300" alt="El efecto mariposa">
+              </div>
+              <h4>El efecto mariposa</h4>
+            </div>
+            <div class="imagen-pelicula m-3">
+              <div class="imagen">
+                <img src="../assets/Dune.jpg" width="200" height="300" alt="Duna">
+              </div>
+              <h4>Duna</h4>
+            </div>
+            <div class="imagen-pelicula m-3">
+              <div class="imagen">
+                <img src="../assets/Halloween_El_final.jpg" width="200" height="300" alt="Halloween el final">
+              </div>
+              <h4>Halloween el final</h4>
+            </div>
+            <div class="imagen-pelicula m-3">
+              <div class="imagen">
+                <img src="../assets/Atrapame si puedes.jpg" width="200" height="300" alt="Atrápame si puedes">
+              </div>
+              <h4>Atrápame si puedes</h4>
+            </div>
         </div>
         
-        <h1  class="p-2" class="text-center">Peliculas Recomendadas</h1>
-        <main>
-          <div class="container-xxl">
-            
-              <div class="d-flex flex-wrap justify-content-md-between justify-content-center" title="Divergente">
-              
-                <div class="imagen-pelicula m-3">
-                      <a  href="../app/pelicula/pelicula.component.html">
-                        <div class="imagen">
-                          <img src="../assets/divergente.jpg" width="200" height="300" alt="divergente">
-                        </div>
-                      </a>
-                      <h4>Divergente</h4>
-                  </div>
-                  <div class="imagen-pelicula m-3 ">
-                      <a href="vista/mario.html">
-                        <div class="imagen">
-                          <img src="../assets/mario.jpg" width="200" height="300" alt="Mario Bros Movie" title="mario bros movie">
-                        </div>
-                      </a>
-                      <h4>Mario Bros movie</h4>
-                  </div>
-                  <div class="imagen-pelicula m-3">
-                      <a href="vista/siete_almas.html">
-                        <div class="imagen">
-                          <img src="../assets/siete.jpg" width="200" height="300" alt="siete almas" title="siete almas">
-                        </div>
-                      </a>
-                      <h4>Siete almas</h4>
-                  </div>
-                  <div class="imagen-pelicula m-3">
-                      <a href="vista/walle.html">
-                        <div class="imagen">
-                          <img src="../assets/walle.jpg" width="200" height="300" alt="walle">
-                        </div> 
-                      </a>
-                      <h4>Walle</h4>
-                  </div>
-                  <div class="imagen-pelicula m-3">
-                      <a href="vista/busca_felicidad.html">
-                        <div class="imagen"><img src="../assets/enbusca.jpg" width="200" height="300" alt="en busca de la felicidad">
-                        </div>
-                      </a>
-                      <h4>En busca de la felicidad</h4>
-                  </div>
-                  <div class="imagen-pelicula m-3">
-                    <div class="imagen">
-                      <img src="../assets/Interestelar.jpg" width="200" height="300" alt="Interestelar">
-                    </div>
-                    <h4>Interestelar</h4>
-                  </div>
-                  <div class="imagen-pelicula m-3">
-                    <div class="imagen">
-                      <img src="../assets/El expreso polar.jpg" width="200" height="300" alt="El expreso polar">
-                    </div>
-                    <h4>El expreso polar</h4>
-                  </div>
-                  <div class="imagen-pelicula m-3">
-                    <div class="imagen">
-                      <img src="../assets/CloudAtlas.jpg " width="200" height="300" alt="Cloud Atlas">
-                    </div>
-                    <h4>Cloud Atlas</h4>
-                  </div>
-                  <div class="imagen-pelicula m-3">
-                    <div class="imagen"><img src="../assets/El castillo ambulante.jpg" width="200" height="300" alt="El castillo ambulante">
-                    </div>
-                    <h4>El castillo ambulante</h4>
-                  </div>
-                  <div class="imagen-pelicula m-3">
-                    <div class="imagen"><img src="../assets/El perfume.jpg" width="200" height="300" alt="El perfume">
-                    </div>
-                    <h4>El perfume</h4>
-                  </div>
-                  <div class="imagen-pelicula m-3 ">
-                    <div class="imagen">
-                      <img src="../assets/lamilla.jpg" width="200" height="300" alt="la milla verde" >
-                    </div>
-                      <h4>La milla verde</h4>
-                  </div>
-                  <div class="imagen-pelicula m-3">
-                    <div class="imagen">
-                      <img src="../assets/dejame.jpg" width="200" height="300" alt="dejame salir">
-                    </div>
-                      <h4>Dejame salir</h4>
-                  </div>
-                  <div class="imagen-pelicula m-3">
-                    <div class="imagen">
-                      <img src="../assets/fragmentado.jpg" width="200" height="300" alt="fragmentado">
-                    </div>
-                      <h4>Fragmentado</h4>
-                  </div>
-                  <div class="imagen-pelicula m-3">
-                    <div class="imagen">
-                      <img src="../assets/nores.jpg" width="200" height="300" alt="no respires">
-                    </div>
-                      <h4>No respires</h4>
-                  </div>
-                  <div class="imagen-pelicula m-3">
-                    <div class="imagen"><img src="../assets/Abre.jpg" width="200" height="300" alt="abre los ojos">
-                    </div>
-                    <h4>Abre los ojos</h4>
-                 </div>
-                  <div class="imagen-pelicula m-3">
-                    <div class="imagen">
-                      <img src="../assets/Predestinacion.jpg" width="200" height="300" alt="Predestinación">
-                    </div>
-                    <h4>Predestinación</h4>
-                  </div>
-                  <div class="imagen-pelicula m-3">
-                    <div class="imagen">
-                      <img src="../assets/El efecto mariposa.jpg" width="200" height="300" alt="El efecto mariposa">
-                    </div>
-                    <h4>El efecto mariposa</h4>
-                  </div>
-                  <div class="imagen-pelicula m-3">
-                    <div class="imagen">
-                      <img src="../assets/Dune.jpg" width="200" height="300" alt="Duna">
-                    </div>
-                    <h4>Duna</h4>
-                  </div>
-                  <div class="imagen-pelicula m-3">
-                    <div class="imagen">
-                      <img src="../assets/Halloween_El_final.jpg" width="200" height="300" alt="Halloween el final">
-                    </div>
-                    <h4>Halloween el final</h4>
-                  </div>
-                  <div class="imagen-pelicula m-3">
-                    <div class="imagen">
-                      <img src="../assets/Atrapame si puedes.jpg" width="200" height="300" alt="Atrápame si puedes">
-                    </div>
-                    <h4>Atrápame si puedes</h4>
-                  </div>
-              </div>
-              
-          </div>
-      </main>
-  </header>
-  <!--Formulario contacto-->
-  <div class="container">
-    <div class="abs-center">
-        <form class="formulario">
-            <h4>Formulario de contacto</h4>
-            <div class="row">
-                <div class="form-group col-md-6">
-                    <label for="inputName">Nombres</label>
-                    <input type="text" class="form-control" id="inputName" placeholder="Nombres">
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="inputLastName">Apellidos</label>
-                    <input type="text" class="form-control" id="inputLastName" placeholder="Apellidos">
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="inputPhone">Telefono de contacto</label>
-                <input type="text" class="form-control" id="inputPhone" placeholder="Telefono">
-            </div>
-            <div class="form-group">
-                <label for="inputAffair">Asunto</label>
-                <input type="text" class="form-control" id="inputAffair" placeholder="Asunto">
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlTextarea1">Mensaje</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <div class="form-group">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                        Verificar
-                    </label>
-                </div>
-            </div>
-            <button type="submit" class="btn btn-success">Enviar</button>
-        </form>
     </div>
+</main>
+</header>
+<div>
+<!--Formulario contacto-->
+<div class="container">
+<div class="abs-center">
+  <form class="formulario">
+      <h4>Formulario de contacto</h4>
+      <div class="row">
+          <div class="form-group col-md-6">
+              <label for="inputName">Nombres</label>
+              <input type="text" class="form-control" id="inputName" placeholder="Nombres">
+          </div>
+          <div class="form-group col-md-6">
+              <label for="inputLastName">Apellidos</label>
+              <input type="text" class="form-control" id="inputLastName" placeholder="Apellidos">
+          </div>
+      </div>
+      <div class="form-group">
+          <label for="inputPhone">Telefono de contacto</label>
+          <input type="text" class="form-control" id="inputPhone" placeholder="Telefono">
+      </div>
+      <div class="form-group">
+          <label for="inputAffair">Asunto</label>
+          <input type="text" class="form-control" id="inputAffair" placeholder="Asunto">
+      </div>
+      <div class="form-group">
+          <label for="exampleFormControlTextarea1">Mensaje</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="form-group">
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                  Verificar
+              </label>
+          </div>
+      </div>
+      <button type="submit" class="btn btn-success">Enviar</button>
+  </form>
+</div>
 </div>
 <!--Fin-->
-  
-  
-  <footer>
-      
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2023 Copyright:
-    <a class="text-dark text-decoration-none"   class="text-center" href="">Hecho por Mariana Forero Tecano, Alejandro Lopez, Ivan de Leon</a>
-    </div>
-    
+
+
+<footer>
+
+<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+© 2023 Copyright:
+<a class="text-dark text-decoration-none"   class="text-center" href="">Hecho por Mariana Forero Tecano, Alejandro Lopez, Ivan de Leon</a>
+</div>
+
 </footer> 
- </div>
-
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-<router-outlet></router-outlet>
+</div>
