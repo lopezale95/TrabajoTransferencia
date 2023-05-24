@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from "@angular/forms";
+import { RouterModule, Route } from "@angular/router";
 
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PeliculaComponent } from './pelicula/pelicula.component';
 import { MarioComponent } from './mario/mario.component';
@@ -15,12 +14,28 @@ import { InterestelarComponent } from './Interestelar/Interestelar.component';
 import { El_Castillo_AmbulanteComponent } from './El_Castillo_Ambulante/El_Castillo_Ambulante.component';
 import { Cloud_AtlasComponent } from './Cloud_Atlas/Cloud_Atlas.component';
 import { ExpresoComponent } from './Expreso/Expreso.component';
+import { PostsComponent } from './posts/posts.component';
 
 
+const routes: Route[] =[
+  {path: "pelicula", component: PeliculaComponent},
+  {path: "mario", component: MarioComponent},
+  {path: "siete_almas", component: Siete_AlmasComponent},
+  {path: "walle", component: WalleComponent},
+  {path: "busca_felicidad", component: Busca_FelicidadComponent},
+  {path: "perfume", component: PerfumeComponent},
+  {path: "Interestelar", component: InterestelarComponent},
+  {path: "El_Castillo_Ambulante", component: El_Castillo_AmbulanteComponent},
+  {path: "cloud_Atlas", component: Cloud_AtlasComponent},
+  {path: "Expreso", component: ExpresoComponent},
+  {path: "**", redirectTo:"inicio"},
+
+
+];
 
 
 @NgModule({
-  declarations: [								
+  declarations: [									
       AppComponent, 
       PeliculaComponent,
       MarioComponent,
@@ -31,12 +46,10 @@ import { ExpresoComponent } from './Expreso/Expreso.component';
       InterestelarComponent,
       El_Castillo_AmbulanteComponent,
       Cloud_AtlasComponent,
-      ExpresoComponent
+      ExpresoComponent,
+      PostsComponent,
    ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule,FormsModule, RouterModule.forRoot(routes)],
   providers: [],
   bootstrap: [AppComponent]
 })

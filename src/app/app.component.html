@@ -1,14 +1,5 @@
 
-  <app-pelicula></app-pelicula>
-  <app-mario></app-mario>
-  <app-siete_Almas></app-siete_Almas>
-  <app-walle></app-walle>
-  <app-busca_Felicidad></app-busca_Felicidad>
-  <app-Perfume></app-Perfume>
-  <app-Cloud_Atlas></app-Cloud_Atlas>
-  <app-El_Castillo_Ambulante></app-El_Castillo_Ambulante>
-  <app-Expreso></app-Expreso>
-  <app-Interestelar></app-Interestelar>
+ 
   <header>
   <nav class="navbar navbar-expand-lg bg-ligth" >
     <div class="container-fluid">
@@ -40,91 +31,8 @@
       </div>
     </div>
   </nav> 
-  <div class="container w-25 p-2"> 
-    <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
-      <div class="carousel-inner p-4">
-        <a href="../app/pelicula/pelicula.component.html">
-          <div class="carousel-item active">
-              <div class="text-center"> <img src="../assets/divergente.jpg"  class="img-fluid"   alt="Divergente" title="Divergente"> </div> 
-            </div>
-        </a>
-         <a href="vista/mario.html">
-          <div class="carousel-item">
-              <div class="text-center"> <img src="../assets/mario.jpg" class="img-fluid"   alt="..." title="mario bros movie"> </div>
-            </div>
-         </a> 
-         <a href="vista/siete_almas.html">
-          <div class="carousel-item">
-              <div class="text-center"> <img src="../assets/siete.jpg" class="img-fluid"   alt="..." title="siete almas"> </div>
-            </div>
-         </a>
-         <a href="vista/walle.html">
-          <div class="carousel-item">
-              <div class="text-center"> <img src="../assets/walle.jpg" class="img-fluid"  alt="..." title="walle"> </div>
-            </div>
-         </a>
-         <a href="vista/busca_felicidad.html">
-          <div class="carousel-item">
-              <div class="text-center"> <img src="../assets/enbusca.jpg" class="img-fluid"  alt="..." title="en busca de la felicidad"> </div>
-            </div>
-         </a>
-        <div class="carousel-item">
-          <div class="text-center"> <img src="../assets/Interestelar.jpg" class="img-fluid"  alt="..." title="Interestelar"> </div>
-        </div>
-        <div class="carousel-item">
-          <div class="text-center"> <img src="../assets/El expreso polar.jpg" class="img-fluid"  alt="..." title="El expreso polar"> </div>
-        </div>
-        <div class="carousel-item">
-          <div class="text-center"> <img src="../assets/CloudAtlas.jpg" class="img-fluid"  alt="..." title="Cloud Atlas"> </div>
-        </div>
-        <div class="carousel-item">
-          <div class="text-center"> <img src="../assets/El castillo ambulante.jpg" class="img-fluid"  alt="..." title="El castillo ambulante"> </div>
-        </div>
-        <div class="carousel-item">
-          <div class="text-center"> <img src="../assets/El perfume.jpg" class="img-fluid"  alt="..." title="El perfume"> </div>
-        </div>
-        <div class="carousel-item">
-          <div class="text-center"> <img src="../assets/Predestinacion.jpg" class="img-fluid"  alt="..." title="Predestinacion"> </div>
-        </div>
-        <div class="carousel-item">
-          <div class="text-center"> <img src="../assets/El efecto mariposa.jpg" class="img-fluid"  alt="..." title="El efecto mariposa"> </div>
-        </div>
-        <div class="carousel-item">
-          <div class="text-center"> <img src="../assets/Dune.jpg" class="img-fluid"  alt="..." title="Duna"> </div>
-        </div>
-        <div class="carousel-item">
-          <div class="text-center"> <img src="../assets/Halloween_El_final.jpg" class="img-fluid"  alt="..." title="Halloween el final"> </div>
-        </div>
-        <div class="carousel-item">
-          <div class="text-center"> <img src="../assets/Atrapame si puedes.jpg" class="img-fluid"  alt="..." title="Atrápame si puedes"> </div>
-        </div>
-        <div class="carousel-item">
-          <div class="text-center"> <img src="../assets/lamilla.jpg" class="img-fluid"  alt="..." title="la milla verde"> </div>
-        </div>
-        <div class="carousel-item">
-          <div class="text-center"> <img src="../assets/dejame.jpg" class="img-fluid"   alt="..." title="dejame salir"> </div>
-        </div>
-        <div class="carousel-item">
-          <div class="text-center"> <img src="../assets/fragmentado.jpg" class="img-fluid"  alt="..." title="fragmentado"> </div>
-        </div>
-        <div class="carousel-item">
-          <div class="text-center"> <img src="../assets/nores.jpg" class="img-fluid"   alt="..." title="no respires"> </div>
-        </div>
-        <div class="carousel-item">
-          <div class="text-center"> <img src="../assets/Abre.jpg" class="img-fluid"   alt="..." title="abre los ojos"> </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div> 
-  </div>
-  
+
+  <app-posts></app-posts>
   <h1  class="p-2" class="text-center">Peliculas Recomendadas</h1>
   <main>
     <div class="container-xxl">
@@ -132,7 +40,7 @@
         <div class="d-flex flex-wrap justify-content-md-between justify-content-center" title="Divergente">
         
           <div class="imagen-pelicula m-3">
-                <a href="./vista/divergente.html">
+                <a routerLink="/pelicula">
                   <div class="imagen">
                     <img src="../assets/divergente.jpg" width="200" height="300" alt="divergente">
                   </div>
@@ -140,7 +48,7 @@
                 <h4>Divergente</h4>
             </div>
             <div class="imagen-pelicula m-3 ">
-                <a href="vista/mario.html">
+                <a routerLink="/mario">
                   <div class="imagen">
                     <img src="../assets/mario.jpg" width="200" height="300" alt="Mario Bros Movie" title="mario bros movie">
                   </div>
@@ -148,7 +56,7 @@
                 <h4>Mario Bros movie</h4>
             </div>
             <div class="imagen-pelicula m-3">
-                <a href="vista/siete_almas.html">
+                <a routerLink="/siete_almas">
                   <div class="imagen">
                     <img src="../assets/siete.jpg" width="200" height="300" alt="siete almas" title="siete almas">
                   </div>
@@ -156,7 +64,7 @@
                 <h4>Siete almas</h4>
             </div>
             <div class="imagen-pelicula m-3">
-                <a href="vista/walle.html">
+                <a routerLink="/walle">
                   <div class="imagen">
                     <img src="../assets/walle.jpg" width="200" height="300" alt="walle">
                   </div> 
@@ -164,38 +72,45 @@
                 <h4>Walle</h4>
             </div>
             <div class="imagen-pelicula m-3">
-                <a href="vista/busca_felicidad.html">
+                <a routerLink="/busca_felicidad">
                   <div class="imagen"><img src="../assets/enbusca.jpg" width="200" height="300" alt="en busca de la felicidad">
                   </div>
                 </a>
                 <h4>En busca de la felicidad</h4>
             </div>
             <div class="imagen-pelicula m-3">
-              <div class="imagen">
-                <img src="../assets/Interestelar.jpg" width="200" height="300" alt="Interestelar">
+              <a routerLink="/Interestelar">
+              <div class="imagen"><img src="../assets/Interestelar.jpg" width="200" height="300" alt="Interestelar">
               </div>
+            </a>
               <h4>Interestelar</h4>
             </div>
             <div class="imagen-pelicula m-3">
-              <div class="imagen">
-                <img src="../assets/El expreso polar.jpg" width="200" height="300" alt="El expreso polar">
+              <a  routerLink="/Expreso">
+              <div class="imagen"><img src="../assets/El expreso polar.jpg" width="200" height="300" alt="El expreso polar">
               </div>
+              </a>
               <h4>El expreso polar</h4>
             </div>
             <div class="imagen-pelicula m-3">
-              <div class="imagen">
-                <img src="../assets/CloudAtlas.jpg " width="200" height="300" alt="Cloud Atlas">
+              <a routerLink="/cloud_Atlas">
+              <div class="imagen"><img src="../assets/CloudAtlas.jpg " width="200" height="300" alt="Cloud Atlas">
               </div>
+              </a>
               <h4>Cloud Atlas</h4>
             </div>
             <div class="imagen-pelicula m-3">
+              <a routerLink="/El_Castillo_Ambulante">
               <div class="imagen"><img src="../assets/El castillo ambulante.jpg" width="200" height="300" alt="El castillo ambulante">
               </div>
+              </a>
               <h4>El castillo ambulante</h4>
             </div>
             <div class="imagen-pelicula m-3">
+              <a routerLink="/perfume">
               <div class="imagen"><img src="../assets/El perfume.jpg" width="200" height="300" alt="El perfume">
               </div>
+              </a>
               <h4>El perfume</h4>
             </div>
             <div class="imagen-pelicula m-3 ">
@@ -314,3 +229,4 @@
 
 </footer> 
 </div>
+<router-outlet></router-outlet>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-busca_Felicidad',
@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Busca_FelicidadComponent implements OnInit {
 
+  @Output() busca_Felicidad = new EventEmitter<string>();
   constructor() { }
 
   ngOnInit() {
+  }
+
+  enlaceBusca_Felicidad(value: string ){
+    this.busca_Felicidad.emit(value);
   }
 
 }
