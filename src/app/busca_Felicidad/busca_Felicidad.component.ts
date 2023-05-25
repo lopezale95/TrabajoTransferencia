@@ -14,7 +14,7 @@ export class Busca_FelicidadComponent implements OnInit {
   }
 
   enlaceBusca_Felicidad(value: string ){
-    this.busca_Felicidad.emit(value);
+    this.busca_Felicidad.emit(value); 
   }
 
 }

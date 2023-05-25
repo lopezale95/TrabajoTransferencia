@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from "@angular/forms";
 import { RouterModule, Route } from "@angular/router";
-
 import { AppComponent } from './app.component';
 import { PeliculaComponent } from './pelicula/pelicula.component';
 import { MarioComponent } from './mario/mario.component';
@@ -15,10 +15,11 @@ import { El_Castillo_AmbulanteComponent } from './El_Castillo_Ambulante/El_Casti
 import { Cloud_AtlasComponent } from './Cloud_Atlas/Cloud_Atlas.component';
 import { ExpresoComponent } from './Expreso/Expreso.component';
 import { PostsComponent } from './posts/posts.component';
+import { GaleryComponent } from './galery/galery.component';
 
 
 const routes: Route[] =[
-  {path: "pelicula", component: PeliculaComponent},
+  {path: "Divergente", component: PeliculaComponent},
   {path: "mario", component: MarioComponent},
   {path: "siete_almas", component: Siete_AlmasComponent},
   {path: "walle", component: WalleComponent},
@@ -35,7 +36,7 @@ const routes: Route[] =[
 
 
 @NgModule({
-  declarations: [									
+  declarations: [										
       AppComponent, 
       PeliculaComponent,
       MarioComponent,
@@ -48,9 +49,12 @@ const routes: Route[] =[
       Cloud_AtlasComponent,
       ExpresoComponent,
       PostsComponent,
+      GaleryComponent
    ],
-  imports: [BrowserModule,FormsModule, RouterModule.forRoot(routes)],
+  imports: [BrowserModule,CommonModule,FormsModule, RouterModule.forRoot(routes)],
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
+export class AppRoutingModule {}
